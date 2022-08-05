@@ -6,3 +6,11 @@ function toggleMenu(){
     const nav = document.getElementById('nav')
     nav.classList.toggle('active')
 }
+
+/*==========================*/
+
+const fecha = document.getElementById('fechar');
+fecha.addEventListener('click', fechacon);
+function fechacon(){
+    rifa.style.display='none'
+}

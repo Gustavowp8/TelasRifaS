@@ -214,6 +214,61 @@ header a:hover{
     color: #FFFFFF;
 }
 
+.fechar{
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.topo{
+    display: flex;
+    border-bottom: 2px solid #006EB3;
+}
+
+.topo h4{
+    text-align: center;
+}
+
+.rifa{
+    display: block;
+    overflow: auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.rifaum{
+    background: #FFFFFF;
+    width: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 10px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.493);
+}
+
+.rifatres{
+    text-align: center;
+}
+
+.rifatres button{
+    padding: 10px;
+    background: #006EB3;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #006EB3;
+}
+
+
+
 footer{
     background: black;
     color: #ffffff;
@@ -285,6 +340,13 @@ footer a:hover{
         display: flex;
         flex-wrap: wrap;
     }
+
+    .rifaum{
+        width: 100%;
+        margin: 30px;
+        margin-top: 20%;
+    }
+
     footer a{
         display: flex;
     }
