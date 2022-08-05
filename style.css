@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(180deg, #ffffff, #006eb36a);
+    background-attachment: fixed;
+}
+
+header{
+    background: #006EB3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header a{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: block;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+header a:hover{
+    background: rgba(0, 0, 0, 0.266);
+}
+
+#iconeMenu{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    display: none;
+}
+
+.capa{
+    background: #ffffff;
+    padding: 10px;
+    color: #006EB3;
+    text-align: center;
+}
+
+.capa h2{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.capa p{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.telas{
+    /*background: blue;*/
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.numeros{
+    max-width: 600px;
+    max-height: 500px;
+    padding: 10px;
+    background: #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10px;
+    overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.numeros button{
+    background: #006EB3;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 64px;
+    height: 47px;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px;
+    border: 1px solid #006EB3;
+}
+
+.numeros button:hover{
+    background: #075281;
+}
+
+.numeros h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    color: #006EB3;
+}
+
+.areauser{
+    /*background: red;*/
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.areauser div{
+    flex: 1 0 200px;
+    margin: 10px;
+}
+
+.perfil{
+    background: #006EB3;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.perfil h3{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.perfil p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.inforifa{
+    background: #FFFFFF;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 5px;
+}
+.inforifa h3{
+    color: #006EB3;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.compradores{
+    background: #FFFFFF;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    max-height: 240px;
+    overflow-y: scroll;
+}
+
+.compradores h2{
+    text-align: center;
+    color: #006EB3;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.compradores ul{
+    background: #FFFFFF;
+   list-style: none;
+    margin-top: 15px;
+}
+
+.compradores p{
+    font-weight: 400;
+    font-size: 24px;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+}
+
+.sorteados{
+    max-width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+.sorteados h2{
+    font-weight: 700;
+    font-size: 24px;
+    color: #006EB3;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex > div{
+    flex: 1 0 150px;
+    background: #006EB3;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+@media(max-width: 600px){
+    #iconeMenu{
+        display: block;
+        cursor: pointer;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background: #006EB3;
+        height: 100vh;
+        z-index: 1000;
+    }
+
+    #nav.active{
+        display: block;
+    }
+    header ul{
+        display: block;
+        list-style: none;
+        
+        background: #006EB3;
+    }
+
+    .numeros{
+        max-height: 200px;
+    }
+    .telas{
+        /*background: red;*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
