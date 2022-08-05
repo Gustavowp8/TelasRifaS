@@ -214,6 +214,39 @@ header a:hover{
     color: #FFFFFF;
 }
 
+footer{
+    background: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+footer h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: .6rem;
+}
+
+footer a:hover{
+    border-bottom: 1px solid #ffffff;
+    background: #605d5d1d;
+}
+
 @media(max-width: 600px){
     #iconeMenu{
         display: block;
@@ -240,11 +273,27 @@ header a:hover{
         background: #006EB3;
     }
 
+    header a{
+        font-size: 30px;
+    }
+
     .numeros{
         max-height: 200px;
     }
     .telas{
         /*background: red;*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer a{
+        display: flex;
+    }
+
+    footer h3{
+        margin: 20px;
+    }
+
+    footer  ul{
         display: flex;
         flex-wrap: wrap;
     }
