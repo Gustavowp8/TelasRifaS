@@ -232,7 +232,7 @@ header a:hover{
 }
 
 .rifa{
-    display: block;
+    display: none;
     overflow: auto;
     background-color: #ffffff10;
     backdrop-filter: blur(12px);
@@ -342,7 +342,7 @@ footer a:hover{
     }
 
     .rifaum{
-        width: 100%;
+        width: auto;
         margin: 30px;
         margin-top: 20%;
     }
